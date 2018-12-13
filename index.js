@@ -47,20 +47,7 @@ client.user.setGame(`1help,Wk`,)
 
 });
 
-bot.on('message', msg => {
 
-    if (msg.content == '1join') {
-        if (msg.member.voiceChannel) {
-
-     if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
-     }
-    }
-}
-})
-bot.on('ready', () => {
-    client.channels.get("491344449234927626").join(); 
-    });
 
 const adminprefix = "1";
 const devs = ['333604437442560000','431150885549113344'];
@@ -87,9 +74,11 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 
 });
-//bot.on('ready',async () => {
-  //client.channels.find(ch => ch.id === "491344449234927626" && ch.type === 'voice').join();
-//
+
+bot.on('ready',async () => { 
+bot.channels.find(ch => ch.id === "491344449234927626" && ch.type === 'voice').join();
+ });
+
 
 bot.on("message", async message => {
 	if (message.author.bot) return;
