@@ -74,7 +74,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 
 });
 client.on('ready',async () => {
-  client.channels.find(ch => ch.id === "490269305284329482" && ch.type === 'voice').join();
+  client.channels.find(ch => ch.id === "491344449234927626" && ch.type === 'voice').join();
 });
 
 bot.on("message", async message => {
