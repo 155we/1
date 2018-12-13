@@ -53,7 +53,7 @@ client.user.setGame(`1help,Wk`,)
       //  if (msg.member.voiceChannel) {
 
   //   if (msg.member.voiceChannel.joinable) {
-         msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
+        // msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
     // }
   //  }
 //}
