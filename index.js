@@ -47,20 +47,20 @@ client.user.setGame(`1help,Wk`,)
 
 });
 
-client.on('message', msg => {
+///bot.on('message', msg => {
 
-    if (msg.content == '1join') {
-        if (msg.member.voiceChannel) {
+    //if (msg.content == '1join') {
+      //  if (msg.member.voiceChannel) {
 
-     if (msg.member.voiceChannel.joinable) {
+  //   if (msg.member.voiceChannel.joinable) {
          msg.member.voiceChannel.join().then(msg.react('white_check_mark'));
-     }
-    }
-}
-})
-client.on('ready', () => {
-    client.channels.get("491344449234927626").join(); 
-    });
+    // }
+  //  }
+//}
+//})
+//client.on('ready', () => {
+   // client.channels.get("491344449234927626").join(); 
+  //  });
 
 const adminprefix = "1";
 const devs = ['333604437442560000','431150885549113344'];
@@ -87,7 +87,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 }
 
 });
-client.on('ready',async () => {
+bot.on('ready',async () => {
   client.channels.find(ch => ch.id === "491344449234927626" && ch.type === 'voice').join();
 });
 
