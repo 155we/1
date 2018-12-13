@@ -312,29 +312,19 @@ break;
 message.channel.send(`
 #User
 **${prefix}userinfo** [Username or blank] : displays info for the selected user or for message sender if arguments are not provided
-
 #Music
 **${prefix}play** [Song Name Or Blank]": Plays a Song Or if Arguments are Not Provided Plays The First Song in The Queue
-
 **${prefix}skip** : Skips The Current Song
-
 **${prefix}queue** : displays Current Queue
-
 **${prefix}queue remove** [Song Number] : Removes Chosen Song From The Queue
-
 **${prefix}queue clear**: Removes All Songs From The Queue
-
 **${prefix}queue shuffle** : Shuffles The Current Queue
-
 **${prefix}repeat**: Plays Current Song Again
-
 **${prefix}stop** : Stops Playing Music And Deletes All Songs in The Queue
-
 **${prefix}yt** [Search Term] : Searches The YouTube and Returns First 5 Results
-
 **${prefix}add** [Search Result Number] : adds a Song From YouTube Search To The Queue
-
 **${prefix}vol** [percentage] : Sets The Volume of The Music To Given Percentage
+**Onwer Bot** : <@333604437442560000> <:Harder:522884683898290176>
 `);
 break;
 
